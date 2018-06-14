@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quoth the Giphy</title>
+</head>
+
+<body>
+  <div id="buttons">
+    
+    <button data-term="Thomas">
+      oh
+    </button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+$("button").on("click", function() {    
+ var term= $(this).attr("data-term");
+var queryURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + term + "&page=2&sort=oldest&api-key=b5088b114c8246f19bedeeddb89b295a";
+
+ $.ajax({
+    url: queryURL,
+    method: "GET"
+ }).then(function(response) {
+console.log(response.doc);
+ })
+})
+ </script>
+  
+</body>
+
+</html>
