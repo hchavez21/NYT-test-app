@@ -19,7 +19,7 @@
 
 $(document).ready(function() {
 
-  var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=eae7407fee8d450589f3b327a198477a&";
+  var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b5088b114c8246f19bedeeddb89b295a";
   var query;
   var numRecords = 5;
   var beginDate;
@@ -34,7 +34,7 @@ function clear() {
   page = 0;
   responseList = [];
   endDate = '';
-  url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=eae7407fee8d450589f3b327a198477a&";
+  url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b5088b114c8246f19bedeeddb89b295a";
 }  
 
 
